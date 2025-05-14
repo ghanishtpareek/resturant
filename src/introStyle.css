@@ -1,0 +1,41 @@
+img{
+    width:auto;
+    display:block;
+    height:100vh;
+    object-fit: cover;
+    max-width:100vw;
+}
+
+.front-images{
+    margin:1rem;
+    display:flex;
+    justify-content: center;
+    gap:5%;
+    overflow-x: hidden;
+}
+
+.nav-links{
+    margin:1rem;
+    padding:10px;
+    display:flex;
+    justify-content: center;
+    gap:5%;
+}
+
+.intro-tag{
+    text-align: center;
+    font-size: 3.5rem;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    cursor: default;
+}
+
+
+.intro-tag:hover {
+    transform: scale(1.02);
+    opacity: 0.9;
+}
+
+/* .front-images > img:not(:last-child){
+    border-right: 5px green solid;
+} */
+

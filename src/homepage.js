@@ -1,6 +1,7 @@
-import foodImg1 from "./image1.jpg"
-import foodImg2 from "./image2.jpg"
-import foodImg3 from "./image3.jpg"
+import './introStyle.css'
+import foodImg1 from "../assets/image1.jpg"
+import foodImg2 from "../assets/image2.jpg"
+import foodImg3 from "../assets/image3.jpg"
 
 function intro_section(content){
     const main_info = document.createElement("div")

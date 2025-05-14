@@ -7,54 +7,22 @@ body{
     background-color: #f2f1e2;
 }
 
-img{
-    width:auto;
-    display:block;
-    height:100vh;
-    object-fit: cover;
-    max-width:100vw;
-}
-
-.front-images{
-    margin:1rem;
-    display:flex;
-    justify-content: center;
-    gap:5%;
-    overflow-x: hidden;
-}
-
-.nav-links{
-    margin:1rem;
-    padding:10px;
-    display:flex;
-    justify-content: center;
-    gap:5%;
-}
-
-.intro-tag{
-    text-align: center;
-    font-size: 3.5rem;
-    transition: transform 0.2s ease, opacity 0.2s ease;
-    cursor: default;
-}
-
-
-.intro-tag:hover {
-    transform: scale(1.02);
-    opacity: 0.9;
-}
 
 button{
-    padding:20px;
+    padding:20px 60px;
     background-color: inherit;
     border:2px solid grey;
     transition: all 0.5s ease; 
 }
 
-button:hover{
+button:not(.decorative-btn):hover{
     border: 2px solid black;
     background-color: black;
-    color:white;
-    
+    color:white;    
 }
 
+.decorative-btn{
+    background-color: black;
+    padding: 20px 30px;
+    border:none;
+}
