@@ -1,5 +1,6 @@
 import './introStyle.css'
 import { nodeCreator } from './helper'
+import { INTRO_CONTENT_TEXT } from './constant'
 import foodImg1 from "../assets/image1.jpg"
 import foodImg2 from "../assets/image2.jpg"
 import foodImg3 from "../assets/image3.jpg"
@@ -27,9 +28,9 @@ function intro_section(content){
 function info_section(content){
     const info = nodeCreator({parentNode:content, classNames:["info-section"]})
     const info_content = nodeCreator({parentNode:info, classNames:["info-section-content"]})
+    info_content.innerHTML = INTRO_CONTENT_TEXT
     const imgSection = nodeCreator({parentNode:info, classNames:["info-section-imgs"]})
     const info_content_sec = nodeCreator({parentNode:imgSection, classNames:["info-section-content-sec"]})
-    info_content.textContent = "lorem ipsum yeah!!!!"
     const img = nodeCreator({parentNode:imgSection,childNode:"img",classNames:["info-section-img"]})
     img.src = foodImg4
     img.alt = "food image"
