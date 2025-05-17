@@ -7,12 +7,17 @@ body{
     background-color: #f2f1e2;
 }
 
-
 button{
     padding:20px 60px;
     background-color: inherit;
     border:2px solid grey;
     transition: all 0.5s ease; 
+}
+
+button:not(.decorative-btn){
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 button:not(.decorative-btn):hover{
@@ -23,6 +28,12 @@ button:not(.decorative-btn):hover{
 
 .decorative-btn{
     background-color: black;
-    padding: 20px 30px;
+    padding: 20px 50px;
     border:none;
+}
+
+nav{
+    position:sticky;
+    top:0px;
+    background: #f2f1e2;
 }

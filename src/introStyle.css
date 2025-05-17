@@ -1,4 +1,4 @@
-img{
+/* img{
     width:auto;
     display:block;
     height:100vh;
@@ -12,6 +12,28 @@ img{
     justify-content: center;
     gap:5%;
     overflow-x: hidden;
+} */
+
+.front-images {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    align-items: center;
+    max-width: 100vw;
+    box-sizing: border-box;
+    margin: 1rem;
+}
+
+.front-images img {
+    flex: 1 1 0;
+    max-width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    min-width: 0;
+    border-radius: 8px;
+    transition: all 0.3s;
+    height: 100vh;
+    max-height: 100vh;
 }
 
 .nav-links{
@@ -34,8 +56,3 @@ img{
     transform: scale(1.02);
     opacity: 0.9;
 }
-
-/* .front-images > img:not(:last-child){
-    border-right: 5px green solid;
-} */
-
