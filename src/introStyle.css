@@ -56,3 +56,20 @@
     transform: scale(1.02);
     opacity: 0.9;
 }
+
+.info-section{
+    justify-content: center;
+    padding:20px;
+}
+
+.info-section-imgs{
+    display:flex;
+}
+
+.info-section-img{
+    flex-grow:1;
+}
+
+.info-section-content-sec{
+    flex-grow:3;
+}

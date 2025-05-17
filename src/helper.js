@@ -19,13 +19,16 @@
 //     }
 // }
 
-export function nodeCreator(element,classNames=[],parentNode = null){
-    const variable = document.createElement(element)
+export function nodeCreator({childNode = "div", parentNode = null, classNames = []}){
+    const variable = document.createElement(childNode)
     if(classNames.length > 0){
         variable.classList.add(...classNames)
     }
     if(parentNode instanceof Node){
         parentNode.appendChild(variable)
+    }
+    else{
+        document.body.append(variable)
     }
     return variable
 }
