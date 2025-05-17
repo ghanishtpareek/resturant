@@ -32,10 +32,37 @@ button:not(.decorative-btn):hover{
     border:none;
 }
 
+@keyframes links-animation {
+    0%{
+        opacity: 0;
+        transform:translateY(-100px);
+    }
+    50%{
+        opacity:0.5;
+        /* transform:translateY(-50px); */
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0px);
+    }
+}
 nav{
     position:sticky;
     top:0px;
     background: #f2f1e2;
+}
+
+nav,
+header{
+    animation: links-animation 0.8s ease-out;
+}
+
+.nav-links{
+    margin:1rem;
+    padding:10px;
+    display:flex;
+    justify-content: center;
+    gap:2%;
 }
 
 .catch-phrase{

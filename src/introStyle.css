@@ -1,5 +1,5 @@
 
-.front-images {
+.resturant-info {
     display: flex;
     justify-content: center;
     gap: 2vw;
@@ -10,24 +10,15 @@
     margin-bottom: 10vh;
 }
 
-.front-images img {
+.resturant-info img {
     flex: 1 1 0;
     max-width: 100%;
     height: 60vh;
     object-fit: cover;
     min-width: 0;
     border-radius: 8px;
-    transition: all 0.3s;
     height: 100vh;
     max-height: 100vh;
-}
-
-.nav-links{
-    margin:1rem;
-    padding:10px;
-    display:flex;
-    justify-content: center;
-    gap:5%;
 }
 
 .intro-tag{
@@ -48,21 +39,46 @@
 }
 
 .info-section-content{
+    margin-bottom:20vh;
+}
+
+.info-section-content,
+.dining-info-content{
     text-align: center;
     display:flex;
     flex-direction: column;
     align-items: center;
+    flex-grow: 1;
 }
 
 .info-section-content > h2{
     font-size: 5rem;
+    margin-bottom: 20vh;
 }
 
-.info-section-content > p{
-    width:60vw;
+.dining-info-content > h2{
+    font-size: 3rem;
+    margin-bottom: 10vh;
+}
+
+.info-section-content > p,
+.dining-info-content > p {
+    max-width:60vw;
     font-size:1.5rem;
     line-height: 2.0;
 }
-.info-section-imgs{
+
+.dining-info-content > p{
+    max-width:50vw;
+}
+
+.info-dining{
     display:flex;
+    margin-bottom: 20vh;
+}
+
+
+.dining-info-content-img{
+    max-width: 30vw;
+    max-height:80vh;
 }
