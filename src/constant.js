@@ -34,3 +34,38 @@ export const CULINARY_INFO = `<h2>A Philosophy Rooted in Craft</h2>
   Our tasting menus are composed like a symphony: thoughtful, progressive, and full of unexpected grace notes.
   Each course is designed to awaken the senses, inviting guests to discover something new with every bite.
 </p>`
+
+export const FOOTER_INFO = `
+<div class="footer-container">
+  <div class = "footer-upper">    
+    <div class="footer-branding">
+      <h3>Odinite</h3>
+      <p>Michelin-Starred Cuisine in the Heart of the City</p>
+    </div>
+    <div class="footer-links">
+      <div>
+        <h4>Visit Us</h4>
+        <p>123 Culinary Avenue<br>Gastronomy District, NY 10001</p>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <p>Mon – Sat: 5:00 PM – 11:00 PM<br>Sunday: Closed</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Email: reservations@odinite.com<br>Phone: (123) 456-7890</p>
+      </div>
+    </div>
+  </div>
+  <div class = "footer-lower">
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="footer-copy">
+        <p>&copy; ${new Date().getFullYear()} Odinite. All rights reserved.</p>
+      </div>
+    </div>
+</div>
+`

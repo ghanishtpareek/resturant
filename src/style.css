@@ -5,6 +5,23 @@
 
 body{
     background-color: #f2f1e2;
+    overflow-x: hidden;
+}
+
+header{
+    margin:15vh 0;
+}
+
+.intro-tag{
+    text-align: center;
+    font-size: 17rem;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    cursor: default;
+}
+
+.intro-tag:hover {
+    transform: scale(1.02);
+    opacity: 0.9;
 }
 
 button{
@@ -12,6 +29,7 @@ button{
     background-color: inherit;
     border:2px solid grey;
     transition: all 0.5s ease; 
+    border-radius: .5rem;
 }
 
 button:not(.decorative-btn){
@@ -62,9 +80,23 @@ header{
     padding:10px;
     display:flex;
     justify-content: center;
+    flex-wrap:wrap;
     gap:2%;
 }
 
 .catch-phrase{
     text-align: center;
 }
+
+img{
+    border-radius: 8px;
+}
+
+/* .scroll-watcher{
+    height: 10px;
+    position: fixed;
+    top:0;
+    z-index: 1000;
+    background-color: lime;
+    width:100%;
+} */

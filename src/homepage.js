@@ -1,6 +1,6 @@
 import './introStyle.css'
 import { nodeCreator } from './helper'
-import { INTRO_CONTENT_TEXT, DINING_EXPERIENCE, INCREDIENTS_INFO, CULINARY_INFO } from './constant'
+import { INTRO_CONTENT_TEXT, DINING_EXPERIENCE, INCREDIENTS_INFO, CULINARY_INFO, FOOTER_INFO } from './constant'
 import foodImg1 from "../assets/image1.jpg"
 import foodImg2 from "../assets/image2.jpg"
 import foodImg3 from "../assets/image3.jpg"
@@ -60,8 +60,14 @@ function info_section(content){
     incredientsInfoContent.innerHTML = INCREDIENTS_INFO
 }
 
+function info_footer(content){
+    const footer = nodeCreator({parentNode:content,classNames:["info-footer"],childNode:"footer"})
+    footer.innerHTML = FOOTER_INFO
+}
+
 export default function initial_load(){
     const content = document.querySelector("#content")
     intro_section(content)
     info_section(content)
+    info_footer(content)
 }

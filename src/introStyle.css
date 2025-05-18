@@ -21,17 +21,6 @@
     max-height: 100vh;
 }
 
-.intro-tag{
-    text-align: center;
-    font-size: 9rem;
-    transition: transform 0.2s ease, opacity 0.2s ease;
-    cursor: default;
-}
-
-.intro-tag:hover {
-    transform: scale(1.02);
-    opacity: 0.9;
-}
 
 .info-section{
     justify-content: center;
@@ -77,8 +66,29 @@
     margin-bottom: 20vh;
 }
 
-
 .dining-info-content-img{
     max-width: 30vw;
     max-height:80vh;
+}
+
+.footer-container{
+    display:flex;
+    flex-direction:column;
+}
+
+.footer-upper{
+    display:flex;
+}
+
+.footer-upper > .footer-branding{
+    flex-grow:1;
+    text-align: center;
+}
+
+.footer-branding > h3{
+    font-size: 2rem;
+}
+
+.footer-upper > .footer-links{
+    flex-grow:2;
 }
