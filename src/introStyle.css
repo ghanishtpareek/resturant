@@ -21,7 +21,6 @@
     max-height: 100vh;
 }
 
-
 .info-section{
     justify-content: center;
     padding:20px;
@@ -91,4 +90,21 @@
 
 .footer-upper > .footer-links{
     flex-grow:2;
+}
+
+.info-section,
+.info-dining{
+    scale: .8;
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range-start:cover;
+    animation-range-end: 50vh;
+}
+
+@keyframes fade-in{
+    to{
+        scale: 1;
+        opacity:1;
+    }
 }
