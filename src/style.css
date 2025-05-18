@@ -68,6 +68,7 @@ nav{
     position:sticky;
     top:0px;
     background: #f2f1e2;
+    padding-top:20px;
 }
 
 nav,
@@ -92,11 +93,18 @@ img{
     border-radius: 8px;
 }
 
-/* .scroll-watcher{
+.scroll-watcher{
     height: 10px;
     position: fixed;
     top:0;
     z-index: 1000;
-    background-color: lime;
+    background-color: black;
     width:100%;
-} */
+    scale: 0 1;
+    animation: scroll-watcher linear;
+    animation-timeline: scroll();
+}
+
+@keyframes scroll-watcher{
+    to {scale: 1 1;}
+}
