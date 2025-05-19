@@ -5,6 +5,8 @@ import foodImg1 from "../assets/image1.jpg"
 import foodImg2 from "../assets/image2.jpg"
 import foodImg3 from "../assets/image3.jpg"
 import foodImg4 from "../assets/image4.jpg"
+import foodImg5 from "../assets/image5.jpg"
+import foodImg6 from "../assets/image6.jpg"
 
 const images = [
         { src: foodImg1, alt: "Delicious dish 1" },
@@ -45,7 +47,7 @@ function info_section(content){
 
     const culinaryInfo = nodeCreator({parentNode:info, classNames:["info-dining"]})
     const culinaryInfoImg = nodeCreator({childNode:'img',parentNode:culinaryInfo, classNames:["dining-info-content-img"]})
-    culinaryInfoImg.src = foodImg4
+    culinaryInfoImg.src = foodImg5
     culinaryInfoImg.alt = "food image"
     culinaryInfoImg.loading = 'lazy'
     const culinaryInfoContent = nodeCreator({parentNode:culinaryInfo, classNames:["dining-info-content"]})
@@ -54,7 +56,7 @@ function info_section(content){
     const ingredientsInfo = nodeCreator({parentNode:info, classNames:["info-dining"]})
     const incredientsInfoContent = nodeCreator({parentNode:ingredientsInfo, classNames:["dining-info-content"]})
     const ingredientsInfoImg = nodeCreator({childNode:'img',parentNode:ingredientsInfo, classNames:["dining-info-content-img"]})
-    ingredientsInfoImg.src = foodImg4
+    ingredientsInfoImg.src = foodImg6
     ingredientsInfoImg.alt = "food image"
     ingredientsInfoImg.loading = 'lazy'
     incredientsInfoContent.innerHTML = INCREDIENTS_INFO

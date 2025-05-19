@@ -77,10 +77,15 @@
 
 .footer-upper{
     display:flex;
+    margin-bottom:2rem;
 }
 
 .footer-upper > .footer-branding{
     flex-grow:1;
+    text-align: center;
+}
+
+.footer-lower{
     text-align: center;
 }
 
@@ -92,6 +97,12 @@
     flex-grow:2;
 }
 
+.footer-links{
+    display:flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
 .info-section,
 .info-dining{
     scale: .8;
@@ -99,7 +110,7 @@
     animation: fade-in linear forwards;
     animation-timeline: view();
     animation-range-start:cover;
-    animation-range-end: 50vh;
+    animation-range-end: 60vh;
 }
 
 @keyframes fade-in{
